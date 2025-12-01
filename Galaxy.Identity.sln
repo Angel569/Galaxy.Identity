@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36511.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "deploy", "deploy", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "keycloak", "keycloak", "{71128C86-A34F-4F18-A1AD-ED326F788611}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galaxy.Keycloak.Blazor", "Galaxy.Keycloak.Blazor\Galaxy.Keycloak.Blazor.csproj", "{ACD3B2EC-C19A-4BEB-A4DE-869BEF561DF6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galaxy.Keycloak.AuthApi", "Galaxy.Keycloak.AuthApi\Galaxy.Keycloak.AuthApi.csproj", "{3D6F99C1-0710-4ECA-B749-1963B95B8C45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galaxy.Keycloak.Application", "Galaxy.Keycloak.Application\Galaxy.Keycloak.Application.csproj", "{B12794DE-51E1-46A0-A1B9-1931FC46D826}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galaxy.Keycloak.Infrastructure", "Galaxy.Keycloak.Infrastructure\Galaxy.Keycloak.Infrastructure.csproj", "{22E7491D-40A6-47AF-B7B5-6F8CE3915B3A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACD3B2EC-C19A-4BEB-A4DE-869BEF561DF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACD3B2EC-C19A-4BEB-A4DE-869BEF561DF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACD3B2EC-C19A-4BEB-A4DE-869BEF561DF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACD3B2EC-C19A-4BEB-A4DE-869BEF561DF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D6F99C1-0710-4ECA-B749-1963B95B8C45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D6F99C1-0710-4ECA-B749-1963B95B8C45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D6F99C1-0710-4ECA-B749-1963B95B8C45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D6F99C1-0710-4ECA-B749-1963B95B8C45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B12794DE-51E1-46A0-A1B9-1931FC46D826}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B12794DE-51E1-46A0-A1B9-1931FC46D826}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B12794DE-51E1-46A0-A1B9-1931FC46D826}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B12794DE-51E1-46A0-A1B9-1931FC46D826}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22E7491D-40A6-47AF-B7B5-6F8CE3915B3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22E7491D-40A6-47AF-B7B5-6F8CE3915B3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22E7491D-40A6-47AF-B7B5-6F8CE3915B3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22E7491D-40A6-47AF-B7B5-6F8CE3915B3A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ACD3B2EC-C19A-4BEB-A4DE-869BEF561DF6} = {71128C86-A34F-4F18-A1AD-ED326F788611}
+		{3D6F99C1-0710-4ECA-B749-1963B95B8C45} = {71128C86-A34F-4F18-A1AD-ED326F788611}
+		{B12794DE-51E1-46A0-A1B9-1931FC46D826} = {71128C86-A34F-4F18-A1AD-ED326F788611}
+		{22E7491D-40A6-47AF-B7B5-6F8CE3915B3A} = {71128C86-A34F-4F18-A1AD-ED326F788611}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ED2992D2-3A7D-482D-9C6D-CD4D88E8C222}
+	EndGlobalSection
+EndGlobal

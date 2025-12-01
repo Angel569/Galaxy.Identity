@@ -1,0 +1,6 @@
+@Galaxy.Keycloak.AuthApi_HostAddress = http://localhost:5124
+
+GET {{Galaxy.Keycloak.AuthApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

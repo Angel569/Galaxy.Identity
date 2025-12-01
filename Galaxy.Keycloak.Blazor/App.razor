@@ -1,0 +1,38 @@
+﻿@using Galaxy.Keycloak.Blazor.Pages
+@inject NavigationManager Navigation
+
+<CascadingAuthenticationState>
+    <Router AppAssembly="@typeof(App).Assembly">
+        <Found Context="routeData">
+           <AuthorizeRouteView RouteData="@routeData">
+               <NotAuthorized>
+                    <LayoutView Layout="@typeof(MainLayout)">
+                        @if (!context.User.Identity.IsAuthenticated)
+                        {
+                            Navigation.NavigateTo("authentication/login");
+                        }
+                        else
+                        {
+                            <p role="alert">No estás autorizado.</p>
+                        }
+                    </LayoutView>
+                </NotAuthorized>
+                <Authorizing>
+                    <LayoutView Layout="@typeof(EmptyLayout)">
+                        <div class="auth-loading-container">
+                            <div class="spinner"></div>
+                            <p class="auth-loading-text">Verificando autenticación...</p>
+                        </div>
+                    </LayoutView>
+                </Authorizing>
+           </AuthorizeRouteView>
+           <FocusOnNavigate RouteData="@routeData" Selector="h1" />
+        </Found>
+        <NotFound>
+            <PageTitle>Not found</PageTitle>
+            <LayoutView Layout="@typeof(MainLayout)">
+                <p role="alert">Sorry, there's nothing at this address.</p>
+            </LayoutView>
+        </NotFound>
+    </Router>
+</CascadingAuthenticationState>
